@@ -1,0 +1,23 @@
+Adicionar redux ao projeto - Adicionar os produtos a um Reducer para poder ser utilizado 
+no Search e na listagem de Produtos -x
+
+GraphQL nos produtos - Ainda não
+
+Acrecentar botão de carrinho no detalhe de produto
+Fazer uma Select box melhor
+Fazer carrinho em sessão ou cookies e REDUX
+Dropdown do carrinho
+Página para o carrinho e continuar com a compra
+Dropdowndown search para página de detalhe
+Zoom na imagem de detalhe
+
+Performance a nível de peso de imagens
+Service workers e offline mode
+Responsivo
+Melhorar um pouco a listagem e acrescentar mais campos sociais
+Acrescentar partilha nas redes sociais na página de detalhe
+ICO e nome do site - x
+Textos chave em outro ficheiro - Ficheiro com um objeto json
+
+Typescript
+
