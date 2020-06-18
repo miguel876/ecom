@@ -7,7 +7,7 @@ export default class Search extends Component {
     render() {
         return (
             <div className="col">
-                <div class="water-logo">
+                <div className="water-logo">
                     <img src={logoBW}></img>
                 </div>
                 <div className="search-container">

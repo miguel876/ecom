@@ -12,8 +12,8 @@ export default class Banner extends Component {
                 <div className="banner-gradient">
                 <div className="banner-mask"></div>
                     <div className="container">
-                        <div className="banner-title">Get your surf pics</div>
-                        <div className="banner-desc">Get all the surf and beach related pics with the best prices and plans.</div>
+                        <div className="banner-title">Get your surf wallpapers</div>
+                        <div className="banner-desc">Get all the surf and beach related wallpapers to print with the best prices and plans.</div>
                         <div className="banner-text">Each week, our experts select a photo from our exclusive Signature collection and make it free to download, with free illustrations and video clips available monthly.<br />
                         </div>
                         <div className="btn-plans"><span>Check our plans</span></div>
