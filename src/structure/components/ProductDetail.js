@@ -44,7 +44,7 @@ export default class ProductDetail extends Component {
             <div className="container mt-5 mb-5">
                 <div className="row">
                     <div className="col-9">
-                    <div className="product-image">
+                    <div className="product-image text-center">
                         <img src={imageSrc + filename} />
                     </div>
                     </div>

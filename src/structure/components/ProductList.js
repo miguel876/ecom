@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Product from './Product.js';
+import Masonry from 'react-masonry-css'
 import store from '../../store.js';
 import { SHOW_PRODUCTS } from '../../reducers/actionTypes.js';
 
@@ -20,8 +21,14 @@ export default class ProductList extends Component {
 
     render() {
         return (
+
+
             <div className="container m-5">
                 <div className="row">
+                <Masonry
+                breakpointCols={2}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column">
                     {
                         this.state.products.map((prod) => (
                             <Product 
@@ -30,7 +37,7 @@ export default class ProductList extends Component {
                             />
                         ))
                     }
-            
+                    </Masonry>
                 </div>
             </div>
         )

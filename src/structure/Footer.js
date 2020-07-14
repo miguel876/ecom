@@ -6,18 +6,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import { Link } from '@material-ui/core';
 
 export default class Footer extends Component {
-    render() {
-        return (
-            <footer>
-                <div className="container">
-                    <div className="row">
-                        <div className="col footer-social">
-                        <Link to="#!"><FacebookIcon className="footer-icon"/></Link>
-                        <Link to="#!"><LinkedInIcon className="footer-icon"/></Link>
-                        <Link to="#!"><TwitterIcon className="footer-icon"/></Link>
-                        </div>
-                    </div>
-                    <div className="row">
+    /*<div className="row">
                         <div className="col text-center footer-contacts pt-4">
                             <div className="logo-footer"></div>
                             <div className="">For more info please contact</div>
@@ -36,9 +25,30 @@ export default class Footer extends Component {
                         </div>
                     <div className="waves-icon">
                     </div> 
+                    </div>*/ 
+    render() {
+        return (
+            <footer>
+                <div className="footer-social-container">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col footer-social">
+                            <Link to="#!"><FacebookIcon className="footer-icon"/></Link>
+                            <Link to="#!"><LinkedInIcon className="footer-icon"/></Link>
+                            <Link to="#!"><TwitterIcon className="footer-icon"/></Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
-               
+                <div className="footer-rights-container">
+                    <div className="container footer">
+                        <div className="row">
+                            <div className="col-12 text-center">
+                                <div className="footer-rights">© 2020 Pic Vault. All rights reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
             </footer>
         )
     }

@@ -1,6 +1,9 @@
 Adicionar redux ao projeto - Adicionar os produtos a um Reducer para poder ser utilizado 
 no Search e na listagem de Produtos -x
 
+Melhorar o footer - colocar uma nota do nome da empresa e dos copyrights
+Menus como apoio ao cliente, contactos.
+
 GraphQL nos produtos - Ainda não
 
 Acrecentar botão de carrinho no detalhe de produto

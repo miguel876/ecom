@@ -9,9 +9,11 @@ export default class Header extends Component {
         return (
             <header>
                 <div className="container d-flex">
-                <Link to="/">  
-                    <div className="logo"></div> 
-                </Link>  
+                <div className="logo-container">
+                    <Link to="/">  
+                        <div className="logo"></div> 
+                    </Link> 
+                </div> 
                     <div className="business-area">
                         <LocalMallIcon className="shopping-cart"/>
                         <ShoppingCart />

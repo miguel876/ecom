@@ -1,6 +1,5 @@
 .product-img {
-    height: 160px;
-    width: 200px;
+
     overflow: hidden;
     text-align: center;
     margin: 0 auto;
@@ -10,13 +9,13 @@
 }
 
 .product-img img {
-    width: 275px;
+    width: 100%;
     margin: 0 auto;
     transition: all 2s;
 }
 
 .product-img:hover img {
-    width: 300px;
+    
 }
 
 .product-name {
