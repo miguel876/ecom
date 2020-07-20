@@ -6,11 +6,12 @@ import { Route } from "react-router-dom";
 import ProductDetail from './components/ProductDetail';
 
 export default class Layout extends Component {
+    
     render() {
         return (
             <layout>
               <Header />
-              <Route path='/product/:id?' component={ProductDetail} exact />
+              <Route path='/product/:id?' component={ProductDetail} exact render={(props) => <ProductDetail {...props} title={`Props through render`} />}/>
               <Route path='/' component={Main} exact />
               <Footer />  
             </layout>

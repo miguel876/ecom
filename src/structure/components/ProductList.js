@@ -13,7 +13,9 @@ export default class ProductList extends Component {
     }
     
     componentDidMount() {
-        store.dispatch({type: SHOW_PRODUCTS});
+        store.dispatch({
+            type: SHOW_PRODUCTS
+        });
         const getProductState = store.getState();
         
         this.setState({products: getProductState.products});
