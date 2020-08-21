@@ -30,8 +30,6 @@ export default class ShoppingCart extends Component {
             type: REMOVE_CART, 
             product_id: id
         });
-
-        console.log(store);
     }
 
     

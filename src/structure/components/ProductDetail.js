@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../../styles/ProductDetail.css';
 import store from '../../store.js';
 import { SHOW_PRODUCTS, ADD_CART, SHOW_CART, GET_STATE } from '../../reducers/actionTypes.js';
+import { languages } from '../../sources.js';
 
 export default class ProductDetail extends Component {
     //Get the redux state product list
@@ -19,6 +20,8 @@ export default class ProductDetail extends Component {
             type: GET_STATE,
             detail: true
         });
+
+        console.log(languages.imageSrc)
     }
 
     componentWillMount() {
@@ -48,11 +51,12 @@ export default class ProductDetail extends Component {
     }
 
     render() {
-        const imageSrc = process.env.PUBLIC_URL + "/products/";
-        const mainCurr = "€", mainSize = "cm";
 
-        let {id, name, price, description, imageSize, filename, author} = this.state.product;
-        
+        const {id, name, price, description, imageSize, filename, author} = this.state.product;
+
+        const imageSrc = process.env.PUBLIC_URL + "/products/";
+        const mainCurr = "€", mainSize = "cm"; 
+
         return (
             <div className="container mt-5 mb-5">
                 <div className="row">

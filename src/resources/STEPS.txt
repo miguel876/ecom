@@ -1,25 +1,20 @@
-Adicionar redux ao projeto - Adicionar os produtos a um Reducer para poder ser utilizado 
-no Search e na listagem de Produtos -x
+Fazer carrinho em sessão ou cookies e REDUX - MH
+Página para o carrinho e continuar com a compra - MH
+Enviar o tamanho para o carrinho - MH
+Colocar as variaveis de imagem noutro ficheiro e chamar em todos os componentes que precisam - MH
 
-Melhorar o footer - colocar uma nota do nome da empresa e dos copyrights -x
-Menus como apoio ao cliente, contactos.
+Menus como apoio ao cliente, contactos. - NTH
+Melhorar a select box - NTH
+Zoom na imagem de detalhe - NTH
+Melhorar um pouco a listagem e acrescentar mais campos sociais, adicionar imagens relacionadas por tags - NTH
+Acrescentar partilha nas redes sociais na página de detalhe - NTH
+Textos chave em outro ficheiro - Ficheiro com um objeto json - NTH
 
-Acrecentar botão de carrinho no detalhe de produto, alterar o header no detalhe de produto
-Fazer uma Select box melhor
-Fazer a funcionalidade do search
-Fazer carrinho em sessão ou cookies e REDUX
-Dropdown do carrinho
-Página para o carrinho e continuar com a compra
-Dropdowndown search para página de detalhe
-Zoom na imagem de detalhe
+Report Lighthouse:
+Performance a nível de peso de imagens - MH
+Service workers e offline mode - MH
+Responsivo - MH
 
-Performance a nível de peso de imagens
-Service workers e offline mode
-Responsivo
-Melhorar um pouco a listagem e acrescentar mais campos sociais, adicionar imagens relacionadas por tags
-Acrescentar partilha nas redes sociais na página de detalhe
-ICO e nome do site - x
-Textos chave em outro ficheiro - Ficheiro com um objeto json
 
-Typescript
+
 
