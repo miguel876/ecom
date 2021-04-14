@@ -54,3 +54,11 @@ footer{
     padding: 7px 0;
     font-size: 10px;
 }
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .footer-icon{
+        width: 1.3em;
+        height: 1.3em;
+    }
+}

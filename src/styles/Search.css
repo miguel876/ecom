@@ -114,3 +114,10 @@
     font-size: 18px;
     float: right;
 }
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .search-box{
+        width: 85%;
+    }
+}

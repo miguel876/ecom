@@ -252,4 +252,43 @@
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
+
+  /* Mobiles */
+  @media (max-width: 480px) {
+    .banner-container img{
+      height: 100vh;
+      width: auto;
+    }
+
+    .banner-logo-title{
+      top: 15%;
+      height: 158px;
+      width: 158px;
+    }
+
+    .banner-desc, .banner-title{
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+      font-size: 50px;
+      top: 33%;
+    }
+
+    .banner-desc, .banner-title{
+      top: 57%;
+      width: 100%;
+    padding: 0 20px;
+    font-size: 20px;
+    }
+
+    .btn-plans{
+      top: 71%;
+    font-size: 16px;
+    }
+
+    .banner-logo{
+      height: 500px;
+      top: -168px;
+    }
+  }
   

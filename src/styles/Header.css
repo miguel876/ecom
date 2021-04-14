@@ -78,3 +78,18 @@ header.detail {
 .detail .logo-container {
     box-shadow: none;
 }
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .logo{
+        width: 121px;
+    height: 125px;
+    transform: rotate(
+        0deg
+        );
+    }
+
+    header .shopping-cart{
+        font-size: 30px;
+    }
+}
