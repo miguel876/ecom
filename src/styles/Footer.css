@@ -1,0 +1,56 @@
+footer{
+    width: 100%;    
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-footer{
+    background: url('../resources/logos/instagram_profile_image_footer.png') no-repeat;
+    background-size: contain;
+    height: 130px;
+    margin-top: -15px;
+    margin-right: -150px;
+    float: left;
+    width: 130px;
+    opacity: 0.6;
+}
+
+.footer-contacts{
+    color: white;
+    font-size: 12px;
+}
+
+.footer-social{
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+.footer-icon{
+    color: white;
+    margin: 15px 15px 0 10px;
+}
+
+    .footer-icon:hover {
+        opacity: 0.6;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+.waves-icon{
+    background: url('../resources/images/waves-bg.png') no-repeat;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    opacity: 0.05;
+    right: -5%;
+    top: 0%;
+}
+
+.footer-social-container {
+    background-color: rgba(0,0,0,1);
+}
+.footer-rights-container {
+    padding: 7px 0;
+    font-size: 10px;
+}

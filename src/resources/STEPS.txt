@@ -1,0 +1,23 @@
+Página para o carrinho e continuar com a compra - MH
+Enviar o tamanho para o carrinho - MH
+Colocar as variaveis de imagem noutro ficheiro e chamar em todos os componentes que precisam - MH
+
+FIREBASE:
+Colocar produtos no firebase, desenvolver integração com firebase - MH
+Criar formulário de compra - MH
+Criar login de user para efetuar as compras - MH
+Página de definições de user - MH
+
+Menus como apoio ao cliente, contactos. - NTH
+Zoom na imagem de detalhe - NTH
+Acrescentar partilha nas redes sociais na página de detalhe - NTH
+Textos chave em outro ficheiro - Ficheiro com um objeto json - NTH
+
+Report Lighthouse:
+Performance a nível de peso de imagens - MH
+Lighouse report - MH
+Service workers e offline mode (Só quando existir o formulário de compra)- MH
+Responsivo - MH
+Colocar cookie para evitar fazer o loading ao fazer refresh - MH
+Colocar call aos produtos numa promise (Colocar o tempo de espera da promise dentro do loading) - MH
+Adicionar transição ao loading - NTH

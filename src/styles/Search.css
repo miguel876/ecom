@@ -1,0 +1,116 @@
+.search-title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.search-box{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.search-box input{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(0,0,0,0.5);
+    outline: none;
+}
+
+.search-box > div{
+    position: absolute;
+    top: 50px;
+    background: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 100;
+    border-radius: 8px;
+}
+
+.search-prd-image {
+    width: 140px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.search-icon{
+    color: rgba(0,0,0,0.5);
+    font-size: 20px !important;
+    margin: 16px 15px 15px 10px;
+    position: absolute;
+}
+
+.water-logo{
+    text-align: center;
+}
+
+.water-logo img{
+    width: 100px;
+    opacity: 0.15;
+}
+
+.search-result-tab{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: black;
+}
+
+.search-box-results a:first-child .search-result-tab {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.search-box-results a:last-child .search-result-tab {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.search-result-tab:hover{
+    background-color: #f1f2f4;
+}
+
+.search-box-results a:not(:last-child) .search-result-tab {
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+}
+
+.search-prd-left{
+    float: left;
+}
+
+.search-prd-image > img{
+    width: 140px;
+}
+
+.search-prd-right{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+}
+
+.search-prd-right-1 {
+    width: 80%;
+}
+
+.search-prd-right-2 {
+    width: 20%;
+    margin-top: 25px;
+}
+
+.search-prd-name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search-prd-desc{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.search-prd-price{
+    font-size: 18px;
+    float: right;
+}

@@ -1,0 +1,265 @@
+.product-image {
+    border: 0.5px solid rgba(0,0,0,0.1);
+}
+
+.product-image > img{
+    max-height: 500px;
+    max-width: 100%;
+}
+.product-title {
+    font-size: 36px;
+}
+.product-author{
+    font-size: 12px;
+    color: #939292;
+}
+.product-author > span{
+    color: #000;
+    font-weight: 500;
+}
+
+.product-size-container > select{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 3px;
+    /* border-color: #c8c8c8; */
+    border: 0.5px solid #000;
+    height: 30px;
+    padding-left: 5px;
+    color: #000;
+    font-size: 14px;
+}
+
+ul.product-select{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-size: 12px;
+    list-style: none;
+    user-select: none;
+    margin-top: 5px;
+}
+
+ul.product-select.opened li{
+    display: block;
+}
+
+ul.product-select.closed li{
+    display: none;
+}
+
+ul.product-select li {
+    border: 0.5px solid #0000006b;
+    padding: 5px 10px;
+    border-top: none;
+    display: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+ul.product-select li:not(:first-child):hover {
+    background-color: #f3f3fa;
+}
+
+ul.product-select li:first-child {
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: default;
+    position: relative;
+}
+
+ul.product-select li:first-child:before {
+    content: "";
+    background: url('../resources/sort-up-solid.svg') no-repeat;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transform-origin: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+ul.product-select.opened li:first-child:before{
+    transform: rotate(-180deg);
+}
+
+ul.product-select li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.product-size-container > div{
+    font-size: 12px;
+}
+
+.product-description {
+    font-size: 12px;
+}
+
+.product-buy{
+    display: flex; 
+}
+
+.product-buy button {
+    width: 80%;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.product-buy button .prod-btn{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(0);
+    width: 100%;
+    z-index: 3;
+    opacity: 1;
+}
+
+.product-buy button .product-buy-text{
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-buy button.prod-btn-end-end .prod-btn {
+    /*transform: translateX(-100%);*/
+    opacity: 0;
+}
+
+    .prod-btn-in .prod-btn{
+        animation-name: buyButtonHoverIn;
+        animation-duration: 0.5s;
+
+    }
+
+    .prod-btn-out .prod-btn{
+        animation-name: buyButtonHoverOut;
+        animation-duration: 0.5s;
+    }
+
+    .product-buy button.prod-btn-end{
+        background-color: rgba(11,64,156,1);
+    }
+  
+
+    @keyframes buyButtonHoverIn {
+        from {opacity: 1}
+        to {opacity: 0}
+    }
+    @keyframes buyButtonHoverOut {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+
+.product-price {
+    float: right;
+    width: 30%;
+    margin-top: 2px;
+}
+
+
+.product-buy button.prod-btn-end{
+    background-color: rgba(11,64,156,1);
+    animation-delay: 1s;
+}
+#container-wave{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.product-buy button.prod-btn-end #container-wave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(97, 129, 184, 1);
+  background-size: cover;
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: 5px;
+  left: 0;
+  background-image: url('../resources/wave.png');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  animation: wave 30s linear infinite;
+
+}
+.wave::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -12px;
+  left: 0;
+  background-image: url('../resources/wave.png');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .5;
+  animation: wave-reverse 30s linear infinite;
+}
+.wave::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url('../resources/wave.png');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .7;
+  animation-delay: -4s;
+  animation: wave 10s linear infinite;
+}
+
+.delay-start-opacity{
+    /*animation: delayStartOpacity linear 5s;*/
+}
+
+@keyframes delayStartOpacity {
+    0% {
+      background: rgba(11,64,156,1);
+    }
+    100% {
+        background: url('../resources/wave.png') no-repeat;
+    }
+  }
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+@keyframes wave-reverse {
+  0% {
+    background-position: 100vw;
+  }
+  100% {
+    background-position: 0;
+  }
+}
