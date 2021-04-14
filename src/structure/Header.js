@@ -3,8 +3,8 @@ import '../styles/Header.css'
 import LocalMallIcon from '@material-ui/icons/LocalMall'
 import ShoppingCart from '../structure/components/ShoopingCart.js'
 import { Link, Route, matchPath } from 'react-router-dom'
-import store from '../store.js';
-import { SHOW_CART, GET_STATE } from '../reducers/actionTypes.js';
+import store from '../store.js'
+import { SHOW_CART, GET_STATE } from '../reducers/actionTypes.js'
 
 export default class Header extends Component {
     constructor(props) {

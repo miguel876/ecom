@@ -10,18 +10,20 @@ export default class ProductDetail extends Component {
         super(props);
         this.state = {
            products: [],
-           product: {}
+           product: {},
+           insideHover: false,
         };
     }
 
     componentDidMount(){
+        console.log(this.props);
         //Change header when inside a detail page
         store.dispatch({
             type: GET_STATE,
             detail: true
         });
 
-        console.log(languages.imageSrc)
+        this.addToCartButtonAnimation();
     }
 
     componentWillMount() {
@@ -42,12 +44,62 @@ export default class ProductDetail extends Component {
         
     }
 
+    sizeSelect = () => {
+        const selectBox = document.querySelector("ul.product-select");
+
+        if(selectBox.classList.contains("opened")){
+            selectBox.classList.remove("opened");
+            selectBox.classList.add("closed");
+        }else{
+            if(selectBox.classList.contains("closed")){
+                selectBox.classList.remove("closed");
+            }
+            selectBox.classList.add("opened");
+        }
+    }
+
+    sizeSelectValue = function(val){
+        const selectBoxFirst = document.querySelector("ul.product-select li:first-child");
+
+        console.log(val);
+        selectBoxFirst.innerHTML = val + "cm";
+    }
+
     addToCart = (product) =>{
         store.dispatch({
             type: ADD_CART, 
             product: product
         });
 
+    }
+
+    addToCartButtonAnimation = () => {
+        const addCartBtn = document.querySelector(".product-detail-panel .product-buy button");
+
+        addCartBtn.onmouseover = () => {
+            this.setState({ insideHover: true });
+
+            addCartBtn.classList.add("prod-btn-in");
+            addCartBtn.classList.add("prod-btn-end") 
+
+            if(addCartBtn.classList.contains("prod-btn-out")) {addCartBtn.classList.remove("prod-btn-out")};
+
+            addCartBtn.onanimationend = () =>{
+                if(this.state.insideHover) {
+                    addCartBtn.classList.add("prod-btn-end-end"); 
+                }
+            }; 
+        }
+
+        addCartBtn.onmouseleave = () => {
+            this.setState({ insideHover: false });
+            addCartBtn.classList.add("prod-btn-out");
+            addCartBtn.onanimationend = () =>{
+                    addCartBtn.classList.remove("prod-btn-end-end"); 
+                    addCartBtn.classList.remove("prod-btn-end");
+                    addCartBtn.classList.remove("prod-btn-in");
+            }; 
+        }
     }
 
     render() {
@@ -75,17 +127,24 @@ export default class ProductDetail extends Component {
                             </div>
                             <div className="product-size-container mt-4">
                             <div>Pick the image size</div>
-                            <select>
-                               {imageSize.map((size, key) => {
-                                   return <option key={key} value={size.size}> {size.size + mainSize} </option>
-                               })}
-                            </select>
+                            <ul className="product-select" onClick={this.sizeSelect}>
+                                <li>Selecione um tamanho:</li>
+                                {imageSize.map((size, key) => {
+                                    return <li onClick={()=>{this.sizeSelectValue(size.size)}} key={key} value={size.size}> {size.size + mainSize} </li>
+                                })}
+                            </ul>
                             </div>
                             <div className="product-description mt-4">
                                 {description}
                             </div>
                             <div className="product-buy mt-4">
-                               <button onClick={() => this.addToCart(this.state.product)}>Add to Cart</button>
+                                <button onClick={() => this.addToCart(this.state.product)}>
+                                    <div className="prod-btn"></div>
+                                    <div id="container-wave">
+                                        <div className="wave"></div>
+                                    </div>
+                                    <div className="product-buy-text">Add to Cart</div>
+                                </button>
                                 <div className="product-price text-right">
                                     {price + mainCurr}
                                 </div>
