@@ -9,6 +9,10 @@ export default class ProductList extends Component {
         super(props);
         this.state = {
            products: [],
+           breakpointColumnsObj: {
+            default: 2,
+            500: 1
+           }
         };
     }
     
@@ -19,7 +23,13 @@ export default class ProductList extends Component {
         const getProductState = store.getState();
         
         this.setState({products: getProductState.products});
+
+        const breakpointColumnsObj = {
+            default: 2,
+            500: 1
+          };
     }
+
 
     render() {
         return (
@@ -28,7 +38,7 @@ export default class ProductList extends Component {
             <div className="container m-5">
                 <div className="row">
                 <Masonry
-                breakpointCols={2}
+                breakpointCols={this.state.breakpointColumnsObj}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column">
                     {

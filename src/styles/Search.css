@@ -120,4 +120,21 @@
     .search-box{
         width: 85%;
     }
+
+    .search-prd-right{
+        display: block;
+    }
+
+    .search-prd-name{
+        font-size: 18px;
+    }
+
+    .search-prd-desc{
+        display: none;
+    }
+
+    .search-prd-right-2{
+        display: block;
+        width: 100%;
+    }
 }

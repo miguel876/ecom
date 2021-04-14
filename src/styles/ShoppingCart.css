@@ -103,3 +103,14 @@
     margin-top: -2px;
     cursor: pointer;
 }
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .item-right .item-name, .item-right .item-price {
+        font-size: 18px;
+    }
+
+    .shopping-cart-list-button .shopping-cart-list-finish{
+        font-size: 14px;
+    }
+}

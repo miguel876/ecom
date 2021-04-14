@@ -112,12 +112,12 @@ export default class ProductDetail extends Component {
         return (
             <div className="container mt-5 mb-5">
                 <div className="row">
-                    <div className="col-9">
+                    <div className="col-12 col-sm-9">
                     <div className="product-image text-center">
                         <img src={imageSrc + filename} />
                     </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-sm-3">
                         <div className="product-detail-panel">
                             <div className="product-title">
                                 {name}

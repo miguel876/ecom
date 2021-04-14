@@ -266,7 +266,7 @@
       width: 158px;
     }
 
-    .banner-desc, .banner-title{
+     .banner-title{
       width: 100%;
       padding: 0 20px;
       text-align: center;
@@ -274,7 +274,7 @@
       top: 33%;
     }
 
-    .banner-desc, .banner-title{
+    .banner-desc{
       top: 57%;
       width: 100%;
     padding: 0 20px;
@@ -289,6 +289,7 @@
     .banner-logo{
       height: 500px;
       top: -168px;
+      transform: rotate(0deg);
     }
   }
   

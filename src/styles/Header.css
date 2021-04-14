@@ -92,4 +92,8 @@ header.detail {
     header .shopping-cart{
         font-size: 30px;
     }
+
+    header.detail{
+        height: 126px;
+    }
 }

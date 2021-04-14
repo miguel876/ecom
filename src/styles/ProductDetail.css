@@ -82,10 +82,11 @@ ul.product-select li:first-child:before {
     transform-origin: center;
     background-size: cover;
     transition: 0.5s;
+    transform: rotate(-180deg);
 }
 
 ul.product-select.opened li:first-child:before{
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
 }
 
 ul.product-select li:last-child {
@@ -262,4 +263,23 @@ ul.product-select li:last-child {
   100% {
     background-position: 0;
   }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .product-detail-panel{
+        margin-top: 15px;
+    }
+
+    .product-author, .product-size-container > div, .product-buy button, ul.product-select, .empty-cart-list{
+        font-size: 14px;
+    }
+
+    .product-description {
+        font-size: 16px;
+    }
+
+    .product-price{
+        font-size: 20px;
+    }
 }
