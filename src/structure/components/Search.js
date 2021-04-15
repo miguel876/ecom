@@ -33,9 +33,8 @@ export default class Search extends Component {
             for(let prd of this.state.products){
                 //Concat the name results
                 let cleanName = prd.name.toLowerCase().replace(/\s/g, '');
-                
                 //Search for name and tags
-                if(cleanName.includes(typed.target.value)){
+                if(cleanName.includes(typed.target.value.toLowerCase())){
                    //Handle the list, add to state and rerender again, no need for a new a component
                     if(typed.target.value){
                         prdArray.push(prd);
@@ -74,7 +73,7 @@ export default class Search extends Component {
                             <div className="search-box-results">
                             {
                                 this.state.productsSearch.map((item, key) => (
-                                    <Link to={"/product/" + item.id}>
+                                    <Link key={key} to={"/product/" + item.id}>
                                         <div className="search-result-tab">
                                             <div className="search-prd-left">
                                                 <div className="search-prd-image"><img src={imageSrc + item.filename} alt="Product" /></div>
