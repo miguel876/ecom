@@ -114,3 +114,39 @@
     font-size: 18px;
     float: right;
 }
+
+.search-empty{
+    margin: 10px 0;
+    text-align: center;
+    color: #b5afaf;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .search-box{
+        width: 85%;
+    }
+
+    .search-prd-right{
+        display: block;
+    }
+
+    .search-prd-desc{
+        display: none;
+    }
+
+    .search-prd-right-2 {
+        display: block;
+        width: 100%;
+    }
+
+    .search-prd-price {
+        float: none;
+    }
+
+    .search-empty{
+        font-size: 14px;
+    }
+}
