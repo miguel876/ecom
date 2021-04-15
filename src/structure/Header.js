@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import '../styles/Header.css'
 import LocalMallIcon from '@material-ui/icons/LocalMall'
 import ShoppingCart from '../structure/components/ShoopingCart.js'
-import { Link, Route, matchPath } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import store from '../store.js'
-import { SHOW_CART, GET_STATE } from '../reducers/actionTypes.js'
+import { SHOW_CART } from '../reducers/actionTypes.js'
 
 export default class Header extends Component {
     constructor(props) {
@@ -40,11 +40,11 @@ export default class Header extends Component {
             });
 
             //Let animation run and delete the animation class in order to restart
-            let eraseClassAfterAnim = setTimeout(() => {
+            /*let eraseClassAfterAnim = setTimeout(() => {
                 this.setState({ 
                     cartItemStyle: "cart-item-counter",
                 });
-            }, 1000);
+            }, 1000);*/
 
         });
     }

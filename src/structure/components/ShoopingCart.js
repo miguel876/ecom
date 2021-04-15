@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../../styles/ShoppingCart.css';
 import store from '../../store.js';
-import { ADD_CART, REMOVE_CART } from '../../reducers/actionTypes.js';
+import { REMOVE_CART } from '../../reducers/actionTypes.js';
 
 export default class ShoppingCart extends Component {
     constructor(props) {
@@ -35,7 +35,7 @@ export default class ShoppingCart extends Component {
     
     render() {
         const imageSrc = process.env.PUBLIC_URL + "/products/";
-        const mainCurr = "€", mainSize = "cm";
+        const mainCurr = "€";
 
         return (
             <div className="cart-list-container">
@@ -50,7 +50,7 @@ export default class ShoppingCart extends Component {
                                 <div>
                                     <div className="item-left">
                                         <div className="item-image">
-                                            <img src={imageSrc + items.filename} />
+                                            <img src={imageSrc + items.filename} alt="Cart Product" />
                                         </div>
                                     </div>
                                     <div className="item-right">

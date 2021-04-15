@@ -18,7 +18,7 @@ export default class Loading extends Component {
         let interval = setInterval(() =>{
             this.setState({loadingPercentage: load});
             load ++;
-            if(load == 101){
+            if(load === 101){
                 clearInterval(interval);
                 setTimeout(() =>{
                     this.setState({loadingStatePercentage: true})
@@ -37,12 +37,18 @@ export default class Loading extends Component {
 
     render() {
     return (
-        <div>
-        <Layout />
-            
-            
-            
+        
+        this.state.loadingState === true && this.state.loadingStatePercentage === true ? 
+        <Layout /> 
+        : 
+        <div className="loading-container">
+            <div className="loading-cont">
+                <div className="loading-logo"></div>
+                <div className="loading-percentage">{this.state.loadingPercentage}%</div>
+            </div>
         </div>
+            
+      
     );
     }
 }

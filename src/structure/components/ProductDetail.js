@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import '../../styles/ProductDetail.css';
 import store from '../../store.js';
-import { SHOW_PRODUCTS, ADD_CART, SHOW_CART, GET_STATE } from '../../reducers/actionTypes.js';
-import { languages } from '../../sources.js';
+import { SHOW_PRODUCTS, ADD_CART, GET_STATE } from '../../reducers/actionTypes.js';
 
 export default class ProductDetail extends Component {
     //Get the redux state product list
@@ -16,7 +15,6 @@ export default class ProductDetail extends Component {
     }
 
     componentDidMount(){
-        console.log(this.props);
         //Change header when inside a detail page
         store.dispatch({
             type: GET_STATE,
@@ -60,8 +58,6 @@ export default class ProductDetail extends Component {
 
     sizeSelectValue = function(val){
         const selectBoxFirst = document.querySelector("ul.product-select li:first-child");
-
-        console.log(val);
         selectBoxFirst.innerHTML = val + "cm";
     }
 
@@ -114,7 +110,7 @@ export default class ProductDetail extends Component {
                 <div className="row">
                     <div className="col-12 col-sm-9">
                     <div className="product-image text-center">
-                        <img src={imageSrc + filename} />
+                        <img src={imageSrc + filename} alt="Product Detail" />
                     </div>
                     </div>
                     <div className="col-12 col-sm-3">

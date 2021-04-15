@@ -59,7 +59,7 @@ export default class Search extends Component {
         return (
             <div className="col">
                 <div className="water-logo">
-                    <img src={logoBW}></img>
+                    <img src={logoBW} alt="Logo"></img>
                 </div>
                 <div className="search-container">
                     <div className="search-title">
@@ -77,7 +77,7 @@ export default class Search extends Component {
                                     <Link to={"/product/" + item.id}>
                                         <div className="search-result-tab">
                                             <div className="search-prd-left">
-                                                <div className="search-prd-image"><img src={imageSrc + item.filename}/></div>
+                                                <div className="search-prd-image"><img src={imageSrc + item.filename} alt="Product" /></div>
                                             </div>
                                             <div className="search-prd-right">
                                                 <div className="search-prd-right-1">

@@ -23,11 +23,6 @@ export default class ProductList extends Component {
         const getProductState = store.getState();
         
         this.setState({products: getProductState.products});
-
-        const breakpointColumnsObj = {
-            default: 2,
-            500: 1
-          };
     }
 
 

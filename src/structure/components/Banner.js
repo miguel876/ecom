@@ -8,7 +8,7 @@ export default class Banner extends Component {
         return (
             <div className="banner">
                 <div className="banner-container">
-                    <img src={bannerImg} />
+                    <img src={bannerImg} alt="Banner"/>
                 </div>
                 <div className="banner-gradient">
                 <div className="banner-mask"></div>

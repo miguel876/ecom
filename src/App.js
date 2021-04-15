@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Layout from './structure/Layout';
 import Loading from './structure/components/Loading';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SmoothScroll from './smoothScrolling.js';
