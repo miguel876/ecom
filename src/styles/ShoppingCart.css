@@ -113,4 +113,8 @@
     .shopping-cart-list-button .shopping-cart-list-finish{
         font-size: 14px;
     }
+
+    .cart-list-container{
+        top: 120%;
+    }
 }

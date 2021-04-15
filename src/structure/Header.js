@@ -40,11 +40,11 @@ export default class Header extends Component {
             });
 
             //Let animation run and delete the animation class in order to restart
-            /*let eraseClassAfterAnim = setTimeout(() => {
+            setTimeout(() => {
                 this.setState({ 
                     cartItemStyle: "cart-item-counter",
                 });
-            }, 1000);*/
+            }, 1000);
 
         });
     }

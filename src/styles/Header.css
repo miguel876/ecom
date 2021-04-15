@@ -83,14 +83,13 @@ header.detail {
 @media (max-width: 480px) {
     .logo{
         width: 121px;
-    height: 125px;
-    transform: rotate(
-        0deg
-        );
+        height: 125px;
+        transform: rotate(0deg);
     }
 
     header .shopping-cart{
-        font-size: 30px;
+        font-size: 35px;
+        margin-top: 45px;
     }
 
     header.detail{

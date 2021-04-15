@@ -291,5 +291,9 @@
       top: -168px;
       transform: rotate(0deg);
     }
+
+    .banner-gradient{
+      background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,.3) 25%,hsla(0,0%,100%,.1));
+    }
   }
   

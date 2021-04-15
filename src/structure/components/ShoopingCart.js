@@ -45,8 +45,8 @@ export default class ShoppingCart extends Component {
                 { this.state.cartItems.length !== 0 ? 
                     <div>
                         {
-                            this.state.cartItems.map((items)=> (
-                                <div className="shopping-cart-list-item">
+                            this.state.cartItems.map((items, key)=> (
+                                <div id={"shoppingCart-" + key} className="shopping-cart-list-item">
                                 <div>
                                     <div className="item-left">
                                         <div className="item-image">
