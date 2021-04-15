@@ -102,7 +102,7 @@ export default class Search extends Component {
                             : 
                             this.state.typing ? 
                                 <div className="search-box-results">
-                                    <div className="search-empty">There are no results matching you search.</div>
+                                    <div className="search-empty">There are no results matching your search.</div>
                                 </div> 
                             : ""
 
