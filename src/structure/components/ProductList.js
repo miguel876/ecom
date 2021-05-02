@@ -12,7 +12,7 @@ export default class ProductList extends Component {
            breakpointColumnsObj: {
             default: 2,
             500: 1
-           }
+           },
         };
     }
     
@@ -21,15 +21,20 @@ export default class ProductList extends Component {
             type: SHOW_PRODUCTS
         });
         const getProductState = store.getState();
+
+        getProductState.products
+        .then((product) => { 
+            this.setState({products:product, loading: true});
+        })
+        .catch((error) => { 
+            console.log(error)
+        })   
         
-        this.setState({products: getProductState.products});
     }
 
 
     render() {
         return (
-
-
             <div className="container m-5">
                 <div className="row">
                 <Masonry

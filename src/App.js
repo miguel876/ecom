@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  new SmoothScroll(document,120,12);
+  //Set session storage to prevent loading again on page refresh
 
   return (
     <BrowserRouter>

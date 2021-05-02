@@ -18,6 +18,12 @@
     font-weight: 500;
 }
 
+.product-size-container{
+    height: 55px;
+    position: relative;
+    z-index: 10;
+}
+
 .product-size-container > select{
     margin-top: 5px;
     width: 100%;
@@ -55,6 +61,7 @@ ul.product-select li {
     display: none;
     transition: 1s;
     cursor: pointer;
+    background-color: white;
 }
 
 

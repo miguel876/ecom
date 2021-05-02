@@ -32,13 +32,15 @@ export default class ProductDetail extends Component {
         });
 
         const getProductState = store.getState();
-  
-        this.setState({
-            products: getProductState.products, 
-            product: getProductState.products.filter( p => p.id == params.id)[0]      
-        });
 
-        
+        getProductState.products
+            .then((products) => { 
+                this.setState({
+                    products: products, 
+                    product: products.filter( p => p.id == params.id)[0]      
+                });
+            })
+            .catch((error) => { console.log(error)})
         
     }
 
@@ -99,7 +101,6 @@ export default class ProductDetail extends Component {
     }
 
     render() {
-
         const {id, name, price, description, imageSize, filename, author} = this.state.product;
 
         const imageSrc = process.env.PUBLIC_URL + "/products/";
@@ -125,9 +126,15 @@ export default class ProductDetail extends Component {
                             <div>Pick the image size</div>
                             <ul className="product-select" onClick={this.sizeSelect}>
                                 <li>Selecione um tamanho:</li>
-                                {imageSize.map((size, key) => {
+                                {
+                                    (imageSize) ?
+                                    imageSize.map((size, key) => {
                                     return <li onClick={()=>{this.sizeSelectValue(size.size)}} key={key} value={size.size}> {size.size + mainSize} </li>
-                                })}
+                                })
+                                
+                                : 
+                                <li> There are no sizes available.</li>
+                                }
                             </ul>
                             </div>
                             <div className="product-description mt-4">

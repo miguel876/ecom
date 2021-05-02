@@ -23,8 +23,16 @@ export default class Search extends Component {
     componentWillMount() {
         store.dispatch({type: SHOW_PRODUCTS});
         const getProductState = store.getState();
+
+        getProductState.products
+        .then((product) => { 
+            this.setState({products:product });
+        })
+        .catch((error) => { 
+            console.log(error)
+        })   
         
-        this.setState({products: getProductState.products});
+       
 
     }
 
