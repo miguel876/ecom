@@ -68,7 +68,6 @@ export default class Loading extends Component {
 
         //Set session storage to prevent loading again on page refresh
         sessionStorage.setItem('loadedImages', 'true');
-        console.log("asdas")
     }
 
     render() {

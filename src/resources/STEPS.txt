@@ -1,5 +1,7 @@
 Página para o carrinho e continuar com a compra - MH
 Enviar o tamanho para o carrinho - MH
+Colocar animação de botão em todos os botões - MH
+Colocar mais produtos a serem loaded ao fazer scoll down - MH
 
 FIREBASE:
 Colocar produtos no firebase, desenvolver integração com firebase - MH
@@ -19,3 +21,8 @@ Lighouse report - MH
 Service workers e offline mode (Só quando existir o formulário de compra)- MH
 Colocar cookie para evitar fazer o loading ao fazer refresh - MH
 Adicionar transição ao loading - NTH
+
+Loading:
+Colocar a componente transversal, conseguir colocar noutro projeto - MH
+Colocar frase e animação de onda no loading - NTH
+
