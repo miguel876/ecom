@@ -35,14 +35,17 @@ export default class ProductDetail extends Component {
 
         const getProductState = store.getState();
 
-        getProductState.products
-            .then((products) => { 
-                this.setState({
-                    products: products, 
-                    product: products.filter( p => p.id == params.id)[0]      
-                });
-            })
-            .catch((error) => { console.log(error)})
+        if(params.id) {
+            getProductState.products
+                .then((products) => { 
+                    this.setState({
+                        products: products, 
+                        product: products.filter( p => p.id == params.id)[0]      
+                    });
+                })
+                .catch((error) => { console.log(error)})    
+        }
+        
         
     }
 
