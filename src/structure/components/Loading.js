@@ -75,6 +75,7 @@ export default class Loading extends Component {
             if(this.state.loadingState && this.state.loadingStatePercentage && this.state.loadedImages) this.checkAllLoads()
         }else{
             this.checkAllLoads()
+            
         }
         
     return (
