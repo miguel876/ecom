@@ -22,6 +22,8 @@ export default class ProductDetail extends Component {
         });
 
         this.addToCartButtonAnimation();
+
+        console.log(store.getState());
     }
 
     componentWillMount() {
