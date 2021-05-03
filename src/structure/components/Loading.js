@@ -63,7 +63,7 @@ export default class Loading extends Component {
 
     checkAllLoads = () => {
         //If all the images and component loads are finished, add scroll and smooth scroll
-        document.getElementsByTagName("body")[0].style.overflow = "scroll";
+        document.getElementsByTagName("body")[0].style.overflowY = "scroll";
         new SmoothScroll(document,120,12);
 
         //Set session storage to prevent loading again on page refresh
