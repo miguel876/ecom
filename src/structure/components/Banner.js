@@ -22,10 +22,13 @@ export default class Banner extends Component {
                         <div className="banner-title">Get your surf wallpapers</div>
                         <div className="banner-desc">Get all the surf and beach related wallpapers to print with the best prices and plans.</div>
                         <div className="btn-plans">
+                            <a href="trim://change-password">
+
                             <div className="button"><span>Check our plans</span>
                                 <div className="button__horizontal"></div>
                                 <div className="button__vertical"></div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
